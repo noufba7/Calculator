@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="calculator">
+    <div class="output">
+        <input type="text" id="u1" placeholder="0" disabled/>
+        <input type="text" id="u2" placeholder="0" disabled/>
+
+   <table>
+       <tr>
+       <td onclick="calcad('(')">(</td>
+       <td onclick="calcad('(')">)</td>
+       <td onclick="removech()">&lt;-</td>
+       <td onclick="calcad('+')" class="vari">+</td>
+    </tr>
+    <tr>
+       <td onclick="calcad('7')">7</td>
+       <td onclick="calcad('8')">8</td>
+       <td onclick="calcad('9')">9</td>
+       <td onclick="calcad('-')" class="vari">-</td>
+    </tr>
+    <tr>
+        <td onclick="calcad('4')">4</td>
+        <td onclick="calcad('5')">5</td>
+        <td onclick="calcad('6')">6</td>
+        <td onclick="calcad('*')" class="vari">*</td>
+     </tr>
+     <tr>
+        <td onclick="calcad('1')">1</td>
+        <td onclick="calcad('2')">2</td>
+        <td onclick="calcad('3')">3</td>
+        <td onclick="calcad('/')" class="vari">/</td>
+     </tr>
+     <tr>
+        <td onclick="reset()"><b>C</b></td>
+        <td onclick="calcad('0')">0</td>
+        <td onclick="calcad('.')">.</td>
+        <td onclick="excm()" class="equalbtn">=</td>
+     </tr>
+   </table>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
